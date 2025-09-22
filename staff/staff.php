@@ -105,7 +105,7 @@ if (!empty($getAttendance["result"])) {
       <input type="text" placeholder="Device" name="device" required><br><br>
       <input type="text" placeholder="Role" name="role" required><br><br>
       <input type="number" placeholder="phone number" name="number" maxlength="11" required><br>
-      <p style="color:red; display:none;"  id="error ">Something wrong with input</p>
+      <p style="color:red; display:none;"  id="error">Something wrong with input</p>
       <button type="submit" >Submit</button>
       <button type="button" onclick="document.querySelector('.overlay').style.display='none'">
         Close

@@ -11,6 +11,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // Optional: set default fetch mode to associative array
     $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $conn->exec("SET TIME ZONE 'Africa/Lagos'");
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }

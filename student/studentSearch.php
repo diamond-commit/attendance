@@ -41,7 +41,7 @@
 
     <?php foreach ($searchResults as $info): ?>
       <tr>
-        <td><?=htmlspecialchars($info["name"]) ?></td
+        <td><?=htmlspecialchars($info["name"]) ?></td>
         <td><?=htmlspecialchars($info["lastname"]) ?></td>
          <td><?= !empty($info["middlename"]) ? htmlspecialchars($info["middlename"]) : "..." ?></td>      
         <td><?= !empty($info["course"]) ? htmlspecialchars($info["course"]) : "..." ?></td>
