@@ -107,7 +107,7 @@
 
             public function dateSearch($date){
         try {
- $sql = "SELECT id, name, number, purpose,, lastname, middlename,  counsellor, address,  timein, timeout  FROM visitor where date(timein) = ?";
+ $sql = "SELECT id, name, number, purpose, lastname, middlename,  counsellor, address,  timein, timeout  FROM visitor where date(timein) = ?";
            $stmt = $this->conn->prepare($sql);
         if (!$stmt) {
             return ["success" => false, "message" => "Preparing query failed"];

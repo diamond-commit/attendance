@@ -8,8 +8,10 @@ $aestheticDate = $date->format("d-m-y");
 
     $student = new student($conn);
      $search = $student->dateSearch($rawdate);
-
+  
+  //  if($search["success"]){
      $searchResults = $search["result"];
+   //    }
    //  var_dump($search);     
     
  ?>

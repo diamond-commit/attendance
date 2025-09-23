@@ -8,9 +8,9 @@ $aestheticDate = $date->format("d-m-y");
 
     $staff = new staff($conn);
      $search = $staff->dateSearch($rawdate);
-
+    //   if($search["success"]){
      $searchResults = $search["result"];
-     
+    //   }
     
  ?>
 <!DOCTYPE html>

@@ -9,7 +9,9 @@ $aestheticDate = $date->format("d-m-y");
     $visitor = new visitor($conn);
      $search = $visitor->dateSearch($rawdate);
 
+   // if($search["success"]){
      $searchResults = $search["result"];
+   //    }
    //  var_dump($search);     
     
  ?>
